@@ -1,0 +1,54 @@
+@media screen and (min-width:0px) and (max-width: 3000px){
+body {
+    background-image: url("back.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+h1{
+    text-align: center;
+    color: blue;
+}
+input{
+    height: 50px;
+    width: 50px;
+    margin: 5px;
+    font-size: 30px;
+    cursor: pointer;
+    transition: all 200ms ease;
+    border-radius: 50px;
+}
+input:hover{
+    color: red;
+    height: 50px;
+    width: 50px;
+    margin: 5px;
+    font-size: 40px;
+    cursor: pointer;
+    transition: all 200ms ease;
+    border-radius: 50px;
+}
+.table1{
+    margin-left: auto;
+    margin-right: auto;
+}
+.table2{
+    padding-top: 100px;
+    margin-left: auto;
+    padding-right: 200px;
+}
+.table3{
+    position: absolute;
+    padding-top: 100px;
+    margin-right: auto;
+    padding-left: 200px;
+    }
+    .enter{
+        width: 100%;
+        height: 100%;
+        text-align: center;
+    }
+    #imgid{
+        border-radius: 5000px;
+    }
+}

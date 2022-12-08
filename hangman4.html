@@ -1,0 +1,122 @@
+<!DOCTYPE html>  
+<html lang="en">  
+ <head>  
+  <meta charset="utf-8" />  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />  
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />  
+  <meta name="description" content="Simple Hangman Game" />  
+  <meta name="keywords" content="game, hangman, javascript" />  
+  <link rel="stylesheet" href="style.css" type="text/css" />  
+  <link  
+   href="https://fonts.googleapis.com/css2?family=Overpass+Mono:wght@600&display=swap"  
+   rel="stylesheet"  
+  />  
+  <title>Hangman</title>  
+ </head>  
+ <body>  
+    <a><h1>Тод бичгийг хэн зохиосон бэ?</h1></a>
+    <table class="table1">
+      <tr>
+        <td><input type="text" id="hariult1"></td>
+        <td><input type="text" id="hariult2"></td>
+        <td><input type="text" id="hariult3"></td>
+        <td><input type="text" id="hariult4"></td>
+        <td><input type="text" id="hariult5"></td>
+        <td><input type="text" id="hariult6"></td>
+        <td><input type="text" id="hariult7"></td>
+        <td><input type="text" id="hariult8"></td>
+        <td><input type="text" id="hariult9"></td>
+        <td><input type="text" id="hariult10"></td>
+      </tr>
+    </table>
+    <table class="table3">
+      <tr>
+        <td><img id="imgid" src="ehlel.jpg" id="image" /></td>
+      </tr>
+    </table>
+    <table class="table2" >
+      <tr>
+        <td><input type="button" value="А" onclick="bichih('А')"></td>
+        <td><input type="button" value="Б" onclick="bichih('Б')"></td>
+        <td><input type="button" value="В" onclick="bichih('В')"></td>
+        <td><input type="button" value="Г" onclick="bichih('Г')"></td>
+        <td><input type="button" value="Д" onclick="bichih('Д')"></td>
+        <td><input type="button" value="Е" onclick="bichih('Е')"></td>
+        <td><input type="button" value="Ё" onclick="bichih('Ё')"></td>
+      </tr>
+      <tr>
+        <td><input type="button" value="Ж" onclick="bichih('Ж')"></td>
+        <td><input type="button" value="З" onclick="bichih('З')"></td>
+        <td><input type="button" value="И" onclick="bichih('И')"></td>
+        <td><input type="button" value="Й" onclick="bichih('Й')"></td>
+        <td><input type="button" value="К" onclick="bichih('К')"></td>
+        <td><input type="button" value="Л" onclick="bichih('Л')"></td>
+        <td><input type="button" value="М" onclick="bichih('М')"></td>
+      </tr>
+      <tr>
+        <td><input type="button" value="Н" onclick="bichih('Н')"></td>
+        <td><input type="button" value="О" onclick="bichih('О')"></td>
+        <td><input type="button" value="Ө" onclick="bichih('Ө')"></td>
+        <td><input type="button" value="П" onclick="bichih('П')"></td>
+        <td><input type="button" value="Р" onclick="bichih('Р')"></td>
+        <td><input type="button" value="С" onclick="bichih('С')"></td>
+        <td><input type="button" value="Т" onclick="bichih('Т')"></td>
+      </tr>
+      <tr>
+        <td><input type="button" value="У" onclick="bichih('У')"></td>
+        <td><input type="button" value="Ү" onclick="bichih('Ү')"></td>
+        <td><input type="button" value="Ф" onclick="bichih('Ф')"></td>
+        <td><input type="button" value="Х" onclick="bichih('Х')"></td>
+        <td><input type="button" value="Ц" onclick="bichih('Ц')"></td>
+        <td><input type="button" value="Ч" onclick="bichih('Ч')"></td>
+        <td><input type="button" value="Ш" onclick="bichih('Ш')"></td>
+      </tr>
+      <tr>
+        <td><input type="button" value="Щ" onclick="bichih('Щ')"></td>
+        <td><input type="button" value="Ъ" onclick="bichih('Ъ')"></td>
+        <td><input type="button" value="Ы" onclick="bichih('Ы')"></td>
+        <td><input type="button" value="Ь" onclick="bichih('Ь')"></td>
+        <td><input type="button" value="Э" onclick="bichih('Э')"></td>
+        <td><input type="button" value="Ю" onclick="bichih('Ю')"></td>
+        <td><input type="button" value="Я" onclick="bichih('Я')"></td>
+      </tr>
+      <tr>
+      </tr>
+    </table>
+    <script>
+      var aldaa=0;
+  function bichih(a){
+    if(document.getElementById("hariult1").value == ""){document.getElementById("hariult1").value =a;a="";}
+    if(document.getElementById("hariult2").value == ""){document.getElementById("hariult2").value =a;a="";}
+    if(document.getElementById("hariult3").value == ""){document.getElementById("hariult3").value =a;a="";}
+    if(document.getElementById("hariult4").value == ""){document.getElementById("hariult4").value =a;a="";}
+    if(document.getElementById("hariult5").value == ""){document.getElementById("hariult5").value =a;a="";}
+    if(document.getElementById("hariult6").value == ""){document.getElementById("hariult6").value =a;a="";}
+    if(document.getElementById("hariult7").value == ""){document.getElementById("hariult7").value =a;a="";}
+    if(document.getElementById("hariult8").value == ""){document.getElementById("hariult8").value =a;a="";}
+    if(document.getElementById("hariult9").value == ""){document.getElementById("hariult9").value =a;a="";}
+    if(document.getElementById("hariult10").value == ""){document.getElementById("hariult10").value =a;a="";}
+    
+    if(document.getElementById("hariult1").value != "") if(document.getElementById("hariult1").value != "Н") {aldaa++;document.getElementById("hariult1").value = "";}
+    if(document.getElementById("hariult2").value != "") if(document.getElementById("hariult2").value != "А") {aldaa++;document.getElementById("hariult2").value = "";}
+    if(document.getElementById("hariult3").value != "") if(document.getElementById("hariult3").value != "М") {aldaa++;document.getElementById("hariult3").value = "";}
+    if(document.getElementById("hariult4").value != "") if(document.getElementById("hariult4").value != "Х") {aldaa++;document.getElementById("hariult4").value = "";}
+    if(document.getElementById("hariult5").value != "") if(document.getElementById("hariult5").value != "А") {aldaa++;document.getElementById("hariult5").value = "";}
+    if(document.getElementById("hariult6").value != "") if(document.getElementById("hariult6").value != "Й") {aldaa++;document.getElementById("hariult6").value = "";}
+    if(document.getElementById("hariult7").value != "") if(document.getElementById("hariult7").value != "Ж") {aldaa++;document.getElementById("hariult7").value = "";}
+    if(document.getElementById("hariult8").value != "") if(document.getElementById("hariult8").value != "А") {aldaa++;document.getElementById("hariult8").value = "";}
+    if(document.getElementById("hariult9").value != "") if(document.getElementById("hariult9").value != "М") {aldaa++;document.getElementById("hariult9").value = "";}
+    if(document.getElementById("hariult10").value != "") if(document.getElementById("hariult10").value != "Ц") {aldaa++;document.getElementById("hariult10").value = "";}else{ location.href="win.html";}
+    
+    if(aldaa==1)
+    document.getElementById("imgid").src="1aldah.jpg";
+    if(aldaa==2)
+    document.getElementById("imgid").src="2aldah.jpg";
+    if(aldaa==3){
+    document.getElementById("imgid").src="end.jpg";
+    location.href="lose.html";
+  }
+  }
+  </script> 
+ </body>  
+</html>  
